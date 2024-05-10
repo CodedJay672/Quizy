@@ -94,7 +94,7 @@ const CreateQuiz = () => {
     };
 
     setIsLoading(true);
-    fetch('https://quizy.popsicool.tech/api/v1/quiz', requestOptions)
+    fetch('https://quizy-qasf.onrender.com/api/v1/quiz', requestOptions)
       .then((response) => response.text())
       .then((result) => {
         toast.success('Quiz created successfully', {

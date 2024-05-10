@@ -14,7 +14,7 @@ const QuizCategory = () => {
   const [loading, setisloading] = useState(true)
 
   useEffect(() => {
-    const url = "https://quizy.popsicool.tech/api/v1/category";
+    const url = "https://quizy-qasf.onrender.com/api/v1/category";
 
     fetch(url)
       .then(res => res.json())

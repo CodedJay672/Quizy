@@ -31,7 +31,7 @@ export const Auth = () => {
     e.preventDefault()
     setIsLoading(true)
     const loginForm ={"email": loginEmail, "password": loginPass}
-    fetch("https://quizy.popsicool.tech/api/token", {
+    fetch("https://quizy-qasf.onrender.com/api/token", {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(loginForm)})
@@ -59,7 +59,7 @@ export const Auth = () => {
     e.preventDefault()
     setIsLoading(true)
     const signinForm = {"email": signinEmail, "username" : SigninName, "password": SigninPass, "first_name": SigninFirstName, "last_name": SigninLastName}
-    fetch("https://quizy.popsicool.tech/api/v1/auth/sign_up", {
+    fetch("https://quizy-qasf.onrender.com/api/v1/auth/sign_up", {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(signinForm)})

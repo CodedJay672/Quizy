@@ -5,7 +5,7 @@ const CategoryOption = ({ selectedcategory, setCategory }) => {
   const [listOption, setListOption] = useState([]);
 
   useEffect(() => {
-    fetch("https://quizy.popsicool.tech/api/v1/category", {
+    fetch("https://quizy-qasf.onrender.com/api/v1/category", {
       method: 'get',
       headers: { "Content-Type": "application/json" },
     }).then(res => {
